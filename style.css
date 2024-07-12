@@ -60,10 +60,26 @@
     background-color: black;
 }
 
-.display-2 .display-6 {
+#hero-text{
+    z-index: 1;
+}
+
+#hero-text .text-1{
+    color: #fff;
+    font-size: 3rem;
+    font-weight: 800;
+}
+#hero-text .text-2{
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: 800;
+    margin-top: 10px;
+    margin-top: 15px;
+}
+/* .display-2 .display-6 {
     font-weight: bold; color:white;
     text-align: left;
-}
+} */
 
 #vdo{
     width: 30%;
