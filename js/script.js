@@ -10,15 +10,15 @@
 //     }
 // });
 
-const navEl=document.querySelector('.navbar');
-window.addEventListener('scroll',() =>{
-    if (window.scrollY >= 56){
-        navEl.classList.add('navbar-scrolled');
-    }
-    else if (window.scrollY < 56){
-        navEl.classList.remove('navbar-scrolled');
-    }
-})
+// const navEl = document.querySelector('.navbar');
+// window.addEventListener('scroll', () => {
+//     if (window.scrollY >= 56) {
+//         navEl.classList.add('navbar-scrolled');
+//     }
+//     else if (window.scrollY < 56) {
+//         navEl.classList.remove('navbar-scrolled');
+//     }
+// })
 
 // active navbar
 // let nav = document.querySelector(".navigation-wrap");
@@ -66,8 +66,15 @@ window.addEventListener('scroll',() =>{
 //         navCollapse.classList.remove("show");
 //     })
 // })
- 
+document.addEventListener("DOMContentLoaded", () => {
+    loadNavbar();
+    loadFooter();
+});
 
-   
-   
+function loadNavbar() {
+    $('#navbar-section').load('navbar.html');
+}
 
+function loadFooter(){
+    $('#footer').load('footer.html');
+}

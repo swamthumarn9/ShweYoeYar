@@ -1,0 +1,13 @@
+{
+    "home" :"Home",
+    "about": "About",
+    "location": "Location",
+    "services": "Services",
+    "food" : "Food",
+    "entertainment": "Entertainment",
+    "party": "Party",
+    "menu": "Menu",
+    "regularMenu": "Regular Menu",
+    "specialMenu": "Special Menu"
+  
+  }
