@@ -124,7 +124,7 @@
 
 .menu-btn .smenu-btn{
     text-decoration: none;
-    
+
 }
 
 .content {
@@ -250,7 +250,7 @@ h1{
 }
 
 .bg-service{
-    background: url('../images/bgservice.jpg') center center no-repeat;     
+    background: url('../images/bg/bgservice.jpg') center center no-repeat;     
     height: 100vh;
 }
 
