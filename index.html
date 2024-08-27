@@ -17,11 +17,13 @@
 </head>
 
 <body class="panel">
-  <header class="main-head">
     <div class="d-block">
-      <section id="navbar-section">
-        <!-- <nav class="navbar navbar-expand-lg navbar-dark shadow-5-strong fixed-top">       -->
-        <nav id="navbar" class="navbar navbar-expand-lg navbar-dark bg-dark shadow-5-strong fixed-top"> 
+      <header class="main-head">
+
+        <section id="navbar-section">
+        <!-- <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-5-strong fixed-top">       -->
+        <!-- <nav id="navbar" class="navbar navbar-expand-lg  shadow-5-strong navigation-wrap fixed-top">  -->
+          <nav class="navbar navbar-expand-lg navigation-wrap fixed-top">
           <!-- fixed-top -->
           <div class="container">
             <span><a href="index.html" class="logoPic"><img src="./images/logo/logo.jpg" role="img" width="40px"
@@ -36,7 +38,8 @@
           </button>
     
             <div class="collapse navbar-collapse justify-content-end flex-grow-1" id="navbarNavDropdown">
-              <ul class="navbar-nav">
+              <!-- <ul class="navbar-nav"> -->
+              <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                 <li class="nav-item">
                   <a class="nav-link active" aria-current="page" href="index.html">Home</a>
                 </li>
@@ -70,16 +73,44 @@
               </ul>
             </div>
           </div>
-        </nav>
-      </section>       
+          </nav>
+        </section>     
+      </header>  
+
+      <!-- section-1 top-banner -->
+  <section id="home">
+    <div class="container-fluid px-0 top-banner">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-5 col-md-6">
+            <h1 style="color: #aa2020;">Good food choices are good investments.</h1>
+            <p style="color: darkgray;">
+              <!-- Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam et purus a odio finibus bibendum amet leo. -->
+            Choose Shwe Yoe Yar Restaurant for Fresh and clean foods to be healthy life.
+            </p>
+            <div class="mt-4">
+              <a class="btn btn-warning" href="menu.html" role="button">Menu</a>&nbsp;&nbsp;
+              <a class="btn btn-warning" href="menuspecial.html" role="button">Special Menu</a>
+              <!-- <button class="menu-btn btn btn-warning"><a href="menu.html" class="menu-btn text-decoration-none ">Menu</a></button>
+              <button class="smenu-btn ms-lg-4 mt-lg-0 mt-4">
+                <a href="menuspecial.html" class="smenu-btn text-decoration-none">Special Menu</a></button> -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
     
-      <section id="welcome" class="d-block m-0 main-menu">
+      <!-- <section id="welcome" class="d-block m-0 main-menu">
       <div class="container-fluid p-0 m-0 ">          
           <div class="col-12">
             <div class="bg bg-image">
               <div class="row content text-white d-flex justify-content-center align-items-center h-100">
-                <div class="col-sm-4 col-md-6">
-                  <img src="./images/logo/logo2.jpg" class="img-fluid homeimg" alt="Responsive image" role="img">
+                <div class="col-sm-6 col-md-6 justify-content-center">
+                  <marquee width="100%" direction="right">
+                    <img src="./images/logo/logo2.jpg" class="img-fluid homeimg" alt="Responsive image" role="img">
+                    <p class="h3 text-warning">မှကြိုဆိုပါတယ်။</p>
+                  </marquee>
                 </div>
                 <div class="col-sm-4 offset-sm-2 col-md-6 offset-md-0" style="font-family: Lato, Arial; font-weight: 700;">                      
                     <p class="display-2">
@@ -93,7 +124,7 @@
             </div>
           </div>            
       </div>
-      </section>
+      </section> -->
     </div>     
       <br>
       
@@ -143,7 +174,7 @@
           <div class="col m-5">
             <p class="fw-bold">Shwe Yoe Yar Menu Items</p>
             <div class="menuItems">              
-                <div id="carouselExampleDark" class="carousel carousel-dark slide">
+                <div id="carouselExampleDark" class="carousel carousel slide">
                   <div class="carousel-indicators">
                     <button type="button" class="btn active" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" aria-current="true" aria-label="Slide 1"></button>
                     <button type="button" class="btn" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -187,24 +218,24 @@
           <div class="row">
             <div class="col-sm p-1">
               <img src="./images/food.jpg" class="img-fluid colimg" alt="Responsive image" role="img">
-              <p class="figure-caption mt-2">Salad Tophue</p>
+              <p class="figure-caption mt-2">Food</p>
             </div>
             <div class="col-sm p-1">
               <img src="./images/food1.jpg" class="img-fluid colimg" alt="Responsive image" role="img">
-              <p class="figure-caption mt-2">Fried Chicken</p>
+              <p class="figure-caption mt-2">Cook</p>
             </div>
             <div class="col-sm p-1">
               <img src="./images/food2.jpg" class="img-fluid colimg" alt="Responsive image" role="img">
-              <p class="figure-caption mt-2">Shrimp Fries</p>
+              <p class="figure-caption mt-2">Kitchen</p>
             </div>
             <div class="col-sm p-1">
               <img src="./images/drink.jpg" class="img-fluid colimg" alt="Responsive image" role="img">
-              <p class="figure-caption mt-2">Liquors</p>
+              <p class="figure-caption mt-2">Bar</p>
             </div>
           </div>
         </div>
       </section>
-  </header>
+  
 
   <section id="footer" class="bg-red px-5 mt-3 mb-3">   <hr>
   <!-- <section id="footer" class="bg-red px-5"> -->
@@ -220,6 +251,13 @@
             <p>Facebook - Shwe Yoe Yar Bar and Restaurant</p>
             <p>Phone Number - 09-73150532</p>
             <p>Copyright © 2024 ShweYoeYar | Privacy Policy | Terms of use</p>
+          </div>
+          <div class="link">
+            <span class="align-items-center">
+              <a href="https://www.facebook.com/shweyoeyar2"><img src="images/links/facebook.png" id="facebook" title="facebook" ></a>
+              &nbsp;&nbsp;<a href="https://www.youtube.com/@ShweYoeYarRestaurant"><img src="images/links/youtube.png" id="facebook" title="youtube"></a>
+              &nbsp;&nbsp;<a href="https://www.foodpanda.com.mm/en/restaurant/fyj3/shwe-yoe-yar-food-and-beer"><img src="images/links/foodpanda.png" id="facebook" title="foodpanda"></a>
+            </span>
           </div>
       </div>
     </div>
