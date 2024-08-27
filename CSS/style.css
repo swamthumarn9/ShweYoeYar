@@ -289,22 +289,33 @@ h1{
     box-shadow: none;
     margin-left:0.625rem;
   } 
+
+  select {
+    /* Reset Select */
+    appearance: none;
+    outline: none !important;
+    border: 0;
+    box-shadow: none;
+    flex: 1;
+    padding: 0 1em;
+    color: var(--bs-nav-link-color);
+    background-color: var(--bs-dark-rgb);
+    font-size: var(--bs-nav-link-font-size);
+    background-image: none;
+    cursor: pointer;
+  }
+
+  /* Remove IE arrow */
+  select::-ms-expand {
+    display: none;
+  }
+  /* Custom Select wrapper */
+  .select {
+    position: relative;
+    display: flex;
+    border-radius: .25em;
+    overflow: hidden;
+  }
+  /* Arrow */
   
-
-/* Change navbar styling on scroll */
-
-/* .navigation-wrap.scroll-on{
-    position:fixed;
-    top:0;
-    left:0;
-    width:100%;
-    background:var(--white-color);
-    box-shadow: 0 0.125rem 1.75rem 0 rgb(0,0,0,0.09);
-    transition:all .15s ease-in-out 0s;
-  }  */
-
-
-
-
-
-/* -------------------
+  /* Transition */
