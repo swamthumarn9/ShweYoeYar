@@ -193,18 +193,35 @@
     height: auto;
 }
 
-h1{
-    font-family:  Lato, sans-serif;
+h1 {
+    font-family:  Verdana, Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: #d6d313; /* Text color */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    /* -webkit-text-stroke: 1px #000;  */
+    /* text-stroke: 1px #000;  */
+    /* font-size: 2em;  */
 }
 
-#location{
+h2{
+    font-family: 'Arial', sans-serif ; 
+    font-weight: bold;
+}
+
+h3{
+    font-family: Times, "Times New Roman", Georgia, serif ; 
+    font-weight: bold;
+}
+
+
+#location1{
     height: auto;
 }
 
-.locationbg{
-    background-color: #d1cdcd; 
+#location2{
+    /* background-color: #EDEDED; 
     background-size: cover; 
-    position: relative;
+    position: relative; */
     height: auto;
 }
 
