@@ -32,8 +32,9 @@
 .navbar{
     /* box-shadow: 0px 0px 8px #000000; */
     transition: all 0.5s;
+    background-color: rgba(19, 22, 26, 0.6);
+
     /* position: absolute;
-    background-color: #000;
     opacity: 0.4; */
 }
 
@@ -118,6 +119,28 @@
     /* height: 100vh; */
     display: block;
     width: 100%;
+}
+
+.bg-foodservice{
+    background: url('../images/food&drink/food&drinklogo.png') center center ;
+    width:100%;
+    background-size:cover;
+    padding:16.875rem 0 9.375rem;
+    height: 100vh;
+    /* height: 100vh;      */
+    /* height: 80vh;
+    width: auto;
+    background-size:contain;
+    background-position:center; */
+    /* background-attachment: fixed; */
+  /* height: 500px; */
+  /* background-repeat: no-repeat;
+  background-size: 100% 100%; */
+}
+
+.bg-service{
+    background: url('../images/bg/bgservice.jpg') center center no-repeat;     
+    height: 100vh;
 }
 
 
@@ -264,14 +287,15 @@ h3{
     text-align: center;   
 }
 
-.colimg{
+.food-card{
+    height: 100px;
 }
 
-.bg-service{
-    background: url('../images/bg/bgservice.jpg') center center no-repeat;     
-    height: 100vh;
-}
 
+.cstm-height-card .card-img-top {
+height: 140px;
+object-fit: contain;
+}
 
 /*
 ==========================================
@@ -308,6 +332,15 @@ h3{
     margin-left:0.625rem;
   } 
 
+nav ul li a.active,
+nav ul li a:hover{
+  border-color:orange;
+  color:orange;
+}
+  /* .nav-link:hover{
+    color: #d6d313;
+  }  */
+
   select {
     /* Reset Select */
     appearance: none;
@@ -337,3 +370,37 @@ h3{
   /* Arrow */
   
   /* Transition */
+
+
+  
+.foodtitle{
+    /* background: linear-gradient(to left, #d6d313,rgb(216, 46, 46)); */
+    background: url('../images/food&drink/beer2.jpg') center center no-repeat;   
+    margin: 3rem;
+    padding: 1rem;
+    color: white;
+    border-radius: 0.4rem;
+    /* box-shadow: 5px 5px 5px grey; */
+    display: inline-block;
+}
+
+.foodtitle > h3{
+    border-bottom: 1px solid black;
+    padding-bottom: 1rem;
+}
+
+.foodtitle > a{
+    background-color: #d6d313;
+    text-decoration: none;
+    color: white;
+    border:  0.5px solid white;
+    padding: 5px 15px;
+    border-radius: 0.3rem;
+    font-size: 0.8em;
+    display: inline-block;
+}
+
+.foodtitle > a:hover{
+    color: black;
+    background-color: grey;
+}
