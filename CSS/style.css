@@ -236,6 +236,12 @@ h3{
     font-weight: bold;
 }
 
+p{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; 
+    color: #A56214;
+    font-size: large;
+}
+
 
 #location1{
     height: auto;
@@ -372,15 +378,14 @@ nav ul li a:hover{
   /* Transition */
 
 
-  
-.foodtitle{
-    /* background: linear-gradient(to left, #d6d313,rgb(216, 46, 46)); */
+  /* Food Title Test */
+/* .foodtitle{
+    background: linear-gradient(to left, #d6d313,rgb(216, 46, 46));
     background: url('../images/food&drink/beer2.jpg') center center no-repeat;   
     margin: 3rem;
     padding: 1rem;
     color: white;
     border-radius: 0.4rem;
-    /* box-shadow: 5px 5px 5px grey; */
     display: inline-block;
 }
 
@@ -403,4 +408,14 @@ nav ul li a:hover{
 .foodtitle > a:hover{
     color: black;
     background-color: grey;
+} */
+  /* ---------------- */
+
+
+.cardhovers {
+    transition: transform 0.2s;
+}
+
+.cardhovers:hover {
+    transform: translateY(-8px);
 }
