@@ -347,32 +347,7 @@ nav ul li a:hover{
     color: #d6d313;
   }  */
 
-  select {
-    /* Reset Select */
-    appearance: none;
-    outline: none !important;
-    border: 0;
-    box-shadow: none;
-    flex: 1;
-    padding: 0 1em;
-    color: var(--bs-nav-link-color);
-    background-color: var(--bs-dark-rgb);
-    font-size: var(--bs-nav-link-font-size);
-    background-image: none;
-    cursor: pointer;
-  }
-
-  /* Remove IE arrow */
-  select::-ms-expand {
-    display: none;
-  }
-  /* Custom Select wrapper */
-  .select {
-    position: relative;
-    display: flex;
-    border-radius: .25em;
-    overflow: hidden;
-  }
+  
   /* Arrow */
   
   /* Transition */
