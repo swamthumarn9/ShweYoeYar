@@ -47,21 +47,13 @@
           </ul>
         </li>
         <li class="nav-item dropdown">
-          <div class="select">
-            <select data-i18n-switcher class="locale-switcher">
-              <option value="en">English</option>
-              <option value="mm">Myanmar</option>
-            </select>
-          </div>
-        </li>
-        <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" id="locale-switcher" role="button"
             data-bs-toggle="dropdown" aria-expanded="false"  data-locale="en">
             <span class="flag-icon flag-icon-us"></span> English
           </a>
           <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="locale-switcher">
-            <li><a class="dropdown-item" href="javascript:void(0)" ><span class="flag-icon flag-icon-us me-2"></span>English</a></li>
-            <li><a class="dropdown-item" href="javascript:void(0)"><span class="flag-icon flag-icon-mm me-2"></span>Myanmar</a></li>
+            <li><a class="dropdown-item" onclick="clickOnLocaleSwitcher('en')" ><span class="flag-icon flag-icon-us me-2"></span>English</a></li>
+            <li><a class="dropdown-item" onclick="clickOnLocaleSwitcher('mm')"><span class="flag-icon flag-icon-mm me-2"></span>Myanmar</a></li>
           </ul>
         </li>
       </ul>

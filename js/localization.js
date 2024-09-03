@@ -26,13 +26,10 @@ async function setLocale(newLocale) {
 
 }
 
-
 async function fetchTranslationsFor(newLocale) {
   const response = await fetch(`/lang/${newLocale}.json`);
   return await response.json();
 }
-
-
 
 function translatePage() {
 
@@ -41,9 +38,7 @@ function translatePage() {
     .querySelectorAll("[data-i18n-key]")
 
     .forEach(translateElement);
-
 }
-
 
 function translateElement(element) {
 
@@ -54,7 +49,6 @@ function translateElement(element) {
   element.innerText = translation;
 
 }
-
 
 // function bindLocaleSwitcher(initialValue) {
 //   const switcher =
@@ -67,18 +61,19 @@ function translateElement(element) {
 //   };
 // }
 
-function bindLocaleSwitcher(initialValue) {
-  console.log(initialValue)
+function bindLocaleSwitcher(clickedValue) {
   const localeValue = $("#navbar #locale-switcher").data('locale');
-  if (initialValue !== localeValue) {
-    setLocale(localeValue);
-    setCookie(cookieName, localeValue, 5)
+  if (clickedValue !== localeValue) {
+    changeFlag(clickedValue);
+    $("#navbar #locale-switcher").data('locale', clickedValue)
+    setLocale(clickedValue);
+    setCookie(cookieName, clickedValue, 5)
   }
 }
 
-$("#navbar #locale-switcher ul li").on("click", function(){
-  bindLocaleSwitcher(initialValue);
-})
+function clickOnLocaleSwitcher(locale) {
+  bindLocaleSwitcher(locale);
+}
 
 function setCookie(name, value, days) {
   var expires = "";
@@ -102,11 +97,10 @@ function getCookie(name) {
 
 function changeFlag(localeValue) {
   const dropDown = $("#navbar #locale-switcher");
-  $(dropDown).data('locale') = localeValue;
+  $(dropDown).data('locale', localeValue);
   if (localeValue === "en") {
-    console.log("change flag in en")
-    $(dropDown).innerText = ' <span class="flag-icon flag-icon-us"></span> English'
+    $(dropDown).html(' <span class="flag-icon flag-icon-us"></span> English')
   } else {
-    $(dropDown).innerText = ' <span class="flag-icon flag-icon-mm"></span> Myanmar'
+    $(dropDown).html(' <span class="flag-icon flag-icon-mm"></span> Myanmar')
   }
 }
