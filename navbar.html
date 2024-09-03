@@ -2,20 +2,19 @@
 <nav id="navbar" class="navbar navbar-expand-lg navbar-dark shadow-5-strong fixed-top navigation-wrap"
   style="box-shadow: 0px 0px 8px #000000">
   <!-- fixed-top -->
-  <div class="container">
+  <div class="container-fluid">
     <span><a href="index.html" class="logoPic text-decoration-none"><img src="./images/logo/logo.jpg" role="img"
           width="40px" height="40px">&nbsp;</a>
       <a class="logoText" href="index.html" data-i18n-key="logoText">Shwe Yoe Yar</a></span>
 
-    <button type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" class="navbar-toggler">
+    <button type="button" id="navbar-icon" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" class="navbar-toggler me-2">
       <span class="navbar-toggler-icon"></span>
     </button>
-    <div data-id="Testing" id="Nice"></div>
 
     <div class="collapse navbar-collapse justify-content-end flex-grow-1" id="navbarNavDropdown">
       <ul class="navbar-nav">
         <li class="nav-item">
-          <a class="nav-link active" id="testing" aria-current="page" data-i18n-key="home" data-link="home"
+          <a class="nav-link active" aria-current="page" data-i18n-key="home" data-link="home"
             href="index.html">HOME</a>
         </li>
         <li class="nav-item">
@@ -47,17 +46,17 @@
           </ul>
         </li>
         <li class="nav-item dropdown">
-          <div class="select">
-            <select data-i18n-switcher class="locale-switcher">
-              <option value="en">English</option>
-              <option value="mm">Myanmar</option>
-            </select>
-          </div>
-
+          <a class="nav-link dropdown-toggle" href="#" id="locale-switcher" role="button"
+            data-bs-toggle="dropdown" aria-expanded="false"  data-locale="en">
+            <span class="flag-icon flag-icon-us"></span> English
+          </a>
+          <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="locale-switcher">
+            <li><a class="dropdown-item" onclick="clickOnLocaleSwitcher('en')" ><span class="flag-icon flag-icon-us me-2"></span>English</a></li>
+            <li><a class="dropdown-item" onclick="clickOnLocaleSwitcher('mm')"><span class="flag-icon flag-icon-mm me-2"></span>Myanmar</a></li>
+          </ul>
         </li>
       </ul>
     </div>
-
   </div>
 </nav>
 
@@ -73,6 +72,10 @@
     })
 
   });
+
+  $(function(){
+    $('.selectpicker').selectpicker();
+});
 
   function activeNav() {
     const activeLink = sessionStorage.getItem(sessionKey);

@@ -26,20 +26,10 @@ async function setLocale(newLocale) {
 
 }
 
-// Retrieve translations JSON object for the given
-
-// locale over the network
-
 async function fetchTranslationsFor(newLocale) {
   const response = await fetch(`/lang/${newLocale}.json`);
   return await response.json();
 }
-
-// Replace the inner text of each element that has a
-
-// data-i18n-key attribute with the translation corresponding
-
-// to its data-i18n-key
 
 function translatePage() {
 
@@ -48,14 +38,7 @@ function translatePage() {
     .querySelectorAll("[data-i18n-key]")
 
     .forEach(translateElement);
-
 }
-
-// Replace the inner text of the given HTML element
-
-// with the translation in the active locale,
-
-// corresponding to the element's data-i18n-key
 
 function translateElement(element) {
 
@@ -67,15 +50,29 @@ function translateElement(element) {
 
 }
 
-function bindLocaleSwitcher(initialValue) {
-  const switcher =
-    document.querySelector("[data-i18n-switcher]");
-  switcher.value = initialValue;
-  switcher.onchange = (e) => {
-    // Set the locale to the selected option[value]
-    setLocale(e.target.value);
-    setCookie(cookieName, e.target.value, 5)
-  };
+// function bindLocaleSwitcher(initialValue) {
+//   const switcher =
+//     document.querySelector("[data-i18n-switcher]");
+//   switcher.value = initialValue;
+//   switcher.onchange = (e) => {
+//     // Set the locale to the selected option[value]
+//     setLocale(e.target.value);
+//     setCookie(cookieName, e.target.value, 5)
+//   };
+// }
+
+function bindLocaleSwitcher(clickedValue) {
+  const localeValue = $("#navbar #locale-switcher").data('locale');
+  if (clickedValue !== localeValue) {
+    changeFlag(clickedValue);
+    $("#navbar #locale-switcher").data('locale', clickedValue)
+    setLocale(clickedValue);
+    setCookie(cookieName, clickedValue, 5)
+  }
+}
+
+function clickOnLocaleSwitcher(locale) {
+  bindLocaleSwitcher(locale);
 }
 
 function setCookie(name, value, days) {
@@ -96,4 +93,14 @@ function getCookie(name) {
     if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length, c.length);
   }
   return null;
+}
+
+function changeFlag(localeValue) {
+  const dropDown = $("#navbar #locale-switcher");
+  $(dropDown).data('locale', localeValue);
+  if (localeValue === "en") {
+    $(dropDown).html(' <span class="flag-icon flag-icon-us"></span> English')
+  } else {
+    $(dropDown).html(' <span class="flag-icon flag-icon-mm"></span> Myanmar')
+  }
 }
