@@ -3,7 +3,7 @@
     width: 45px;
 }
 
-body{
+body .panel{
     background-image: url(images/bg/whitebg.png) center center no-repeat;
     
     /* opacity: 0.5;
@@ -99,28 +99,17 @@ body{
 }
 
 .bg-about{
-    /* background: url('../images/slide1.jpg') center center no-repeat;      */
     background-color: black;
-    /* height: 100vh; */
     display: block;
     width: 100%;
 }
 
 .bg-foodservice{
-    background: url('../images/food&drink/food&drinklogo.png') center center ;
+    background: url('../images/bg/bgservice.jpg') center center ;
     width:100%;
     background-size:cover;
     padding:16.875rem 0 9.375rem;
     height: 100vh;
-    /* height: 100vh;      */
-    /* height: 80vh;
-    width: auto;
-    background-size:contain;
-    background-position:center; */
-    /* background-attachment: fixed; */
-  /* height: 500px; */
-  /* background-repeat: no-repeat;
-  background-size: 100% 100%; */
 }
 
 .bg-service{
