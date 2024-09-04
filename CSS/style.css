@@ -334,3 +334,7 @@ nav ul li a:hover{
 .cardhovers:hover {
     transform: translateY(-8px);
 }
+
+p{
+    line-height: 2rem !important;
+}
