@@ -7,7 +7,8 @@
           width="40px" height="40px">&nbsp;</a>
       <a class="logoText" href="index.html" data-i18n-key="logoText">Shwe Yoe Yar</a></span>
 
-    <button type="button" id="navbar-icon" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" class="navbar-toggler me-2">
+    <button type="button" id="navbar-icon" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+      class="navbar-toggler me-2">
       <span class="navbar-toggler-icon"></span>
     </button>
 
@@ -46,13 +47,15 @@
           </ul>
         </li>
         <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="locale-switcher" role="button"
-            data-bs-toggle="dropdown" aria-expanded="false"  data-locale="en">
+          <a class="nav-link dropdown-toggle" href="#" id="locale-switcher" role="button" data-bs-toggle="dropdown"
+            aria-expanded="false" data-locale="en">
             <span class="flag-icon flag-icon-us"></span> English
           </a>
           <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="locale-switcher">
-            <li><a class="dropdown-item" onclick="clickOnLocaleSwitcher('en')" ><span class="flag-icon flag-icon-us me-2"></span>English</a></li>
-            <li><a class="dropdown-item" onclick="clickOnLocaleSwitcher('mm')"><span class="flag-icon flag-icon-mm me-2"></span>Myanmar</a></li>
+            <li><a class="dropdown-item" onclick="clickOnLocaleSwitcher('en')"><span
+                  class="flag-icon flag-icon-us me-2"></span>English</a></li>
+            <li><a class="dropdown-item" onclick="clickOnLocaleSwitcher('mm')"><span
+                  class="flag-icon flag-icon-mm me-2"></span>Myanmar</a></li>
           </ul>
         </li>
       </ul>
@@ -72,10 +75,6 @@
     })
 
   });
-
-  $(function(){
-    $('.selectpicker').selectpicker();
-});
 
   function activeNav() {
     const activeLink = sessionStorage.getItem(sessionKey);
