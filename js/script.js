@@ -23,7 +23,7 @@ window.onload = function () {
 };
 
 function loadNavbar() {
-  $('#navbar-section').load('navbar.html');   
+  $('#navbar-section').load('navbar.html');
 }
 
 function loadFooter(){
@@ -67,7 +67,6 @@ function translateElement(element) {
 function bindLocaleSwitcher(clickedValue) {
   const selectBox = $("#navbar #locale-switcher");
   const localeValue = $(selectBox).data('locale')
-  console.log(localeValue);
   if (clickedValue !== localeValue) {
     changeFlag(clickedValue);
     $("#navbar #locale-switcher").data('locale', clickedValue)
