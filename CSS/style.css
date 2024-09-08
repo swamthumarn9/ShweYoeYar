@@ -1,5 +1,6 @@
 
-.logoPic {
+.logoText {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     width: 45px;
 }
 
@@ -22,14 +23,20 @@ body .panel{
 .navbar{
     /* box-shadow: 0px 0px 8px #000000; */
     transition: all 0.5s;
-    background-color: rgba(19, 22, 26, 0.6);
+    background-color: rgba(19, 22, 26, 1);
 
     /* position: absolute;
     opacity: 0.4; */
 }
 
 .nav-link{
-    color: #d6d313;
+    color: #FFD700 !important;
+    font-weight: 900;
+    /* #aa2020 */
+}
+
+.nav-link.active , .nav-link:hover{
+    color: #d62313 !important;
     /* #aa2020 */
 }
 
@@ -98,10 +105,9 @@ body .panel{
     background-attachment: fixed;
 }
 
-.bg-about{
+.bg-entertainment{
     background-color: black;
     display: block;
-    width: 100%;
 }
 
 .bg-foodservice{
@@ -116,7 +122,6 @@ body .panel{
     background: url('../images/bg/bgservice.jpg') center center no-repeat;     
     height: 100vh;
 }
-
 
 /* -------------------------- */
 
