@@ -14,6 +14,88 @@
     href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/fontawesome.min.css">
 
   <title>Shwer Yoe Yar | Home</title>
+  <style>
+    h1{
+      font-family: 'Montserrat', sans-serif; 
+      color: #fff ; font-size: 4rem;
+      letter-spacing: 0.1rem; 
+      margin-bottom: 1rem;
+      animation: fadeInUp 1.5s ease;
+      font-weight: 700;
+    }
+
+    .top-banner{
+      background: url('../images/bg/bg.jpg') no-repeat center;
+      background-size: cover; /* Ensures the background covers the entire page */
+    background-position: center; /* Centers the background image */
+    background-repeat: no-repeat; /* Prevents the background from repeating */
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            animation: fadeIn 2s ease-in-out;
+            animation: fadeInUp 2s ease;
+  
+    }
+
+    .tagline {
+            font-size: 1.5rem;
+            color: #ffffff;
+            margin-bottom: 2rem;
+            animation: fadeInUp 2s ease;
+        }
+      
+    .locationbtn , .menubtn{
+       background-color: #e50914;    /*#e50914 */
+            padding: 15px 40px;
+            color: #fff;
+            font-size: 1.2rem;
+            border: none;
+            cursor: pointer;
+            border-radius: 30px;
+            text-transform: uppercase;
+            transition: background-color 0.3s ease;
+            animation: bounce 2s infinite;
+    }
+
+    .locationbtn .menubtn:hover {
+            background-color: #d40810;
+        }
+
+    @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% {
+                transform: translateY(0);
+            }
+            40% {
+                transform: translateY(-10px);
+            }
+            60% {
+                transform: translateY(-5px);
+            }
+        }
+
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+
+        @keyframes fadeInUp {
+            0% {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+  </style>
 </head>
 
 <body class="panel">
@@ -27,16 +109,17 @@
     <section id="home">
       <div class="container-fluid px-0 top-banner">
         <div class="container">
-          <div class="row gx-3">
-            <div class="col-lg-5 col-md-6 mt-5 ms-4">
-              <h1 style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; color: #ffffff ;" class="mb-2" data-i18n-key="goodFood">Food - Drink - Live Music</h1>
+          <div class="row gx-1 mt-4">
+            <div class="col-lg-12 col-md-12 mb-4 text-center">
+              <h1 class="mb-2 hometext" data-i18n-key="goodFood">Shwe Yoe Yar Restaurant</h1>
+              <p class="tagline">Food - Drink - Live Music</p>
               <!-- <h1 style="color: #d6d313 ;">Enjoy Our Delicious Foods & Drinks.</h1> -->
               <!-- <p style="color: rgb(196, 195, 195);" data-i18n-key="choose">
                 Choose Shwe Yoe Yar Restaurant for Fresh and delicious foods, clean accommodation for your healthy.
               </p> -->
               <div class="mt-4">
-                <a class="btn btn-danger" href="menu.html" role="button" data-i18n-key="menu">MENU</a>&nbsp;&nbsp;
-                <a class="btn btn-light" href="location.html" role="button" data-i18n-key="contact">CONTACT</a>
+                <!-- <a class="btn text-white menubtn" style="background-color: #e50914;" href="menu.html" role="button" data-i18n-key="menu">MENU</a>&nbsp;&nbsp; -->
+                <a class="btn btn-danger text-white locationbtn" href="location.html" role="button" data-i18n-key="contact">CONTACT US</a>
                 <!-- <button class="menu-btn btn btn-warning"><a href="menu.html" class="menu-btn text-decoration-none ">Menu</a></button>
               <button class="smenu-btn ms-lg-4 mt-lg-0 mt-4">
                 <a href="menuspecial.html" class="smenu-btn text-decoration-none">Special Menu</a></button> -->
@@ -139,7 +222,7 @@
             <!-- <p class="figure-caption mt-2">Cook</p> -->
           </div>
           <div class="col-sm p-1">
-            <img src="./images/food.jpg" class="img-fluid colimg" alt="Responsive image" role="img">
+            <img src="./images/group1.jpg" class="img-fluid colimg" alt="Responsive image" role="img">
             <!-- <p class="figure-caption mt-2">Kitchen</p> -->
           </div>
           <div class="col-sm p-1">

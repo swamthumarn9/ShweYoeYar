@@ -1,4 +1,10 @@
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 .logoText {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     width: 45px;
@@ -24,6 +30,7 @@ body .panel{
     /* box-shadow: 0px 0px 8px #000000; */
     transition: all 0.5s;
     background-color: rgba(19, 22, 26, 1);
+            font-size: 1.1rem;
 
     /* position: absolute;
     opacity: 0.4; */
@@ -67,16 +74,31 @@ body .panel{
     height: 100%;
 }
 
+@media (max-width: 768px) {
+    h1 {
+        font-size: 3rem;
+    }
+
+    .btn {
+        font-size: 1rem;
+        padding: 12px 30px;
+    }
+}
+
+.hometext{
+    
+}
+
 /*
 ==========================================
    top-banner Design
 ==========================================
 */
 .top-banner{
-    width:100%;
+    /* width:100%;
     background: url('../images/bg/bghome.jpg') no-repeat center;
     background-size:cover;
-    padding:16.875rem 0 9.375rem;
+    padding:16.875rem 0 9.375rem; */
   }
 
 .bg {   
