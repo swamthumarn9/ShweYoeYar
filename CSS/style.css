@@ -228,10 +228,16 @@ p {
     height: 50%;
 }
 
+#footer {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
 
 #footer .logo {
     max-width: 280px;
     width: 100%;
+}
+#footer .footer-icon{
+    font-size: 1.5rem;
 }
 
 #service {
@@ -281,9 +287,7 @@ p {
 .nav-link {
     font-size: 0.9375rem;
     font-weight: 600;
-    text-transform: capitalize;
-    color: #d6d313;
-    /* #d6d313 */
+    text-transform: capitalize;    
     letter-spacing: 1px;
 }
 
@@ -345,6 +349,7 @@ p {
 
 p {
     line-height: 2rem !important;
+    text-align: justify;
 }
 
 .photo-gallery {
