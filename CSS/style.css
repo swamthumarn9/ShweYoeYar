@@ -1,67 +1,19 @@
-
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-.logoText {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    width: 45px;
-}
-
-body .panel{
-    /* background-image: url(images/bg/whitebg.png) center center no-repeat; */
-    
-    /* opacity: 0.5;
-    width: 100%;
-    height: 100%;
-    background-repeat: no-repeat;    
-    background-position: center;
-    background-size: cover;  */
-}
-
-.logoText {
-    color: white;
-    text-decoration: none;
-}
-
-.navbar{
-    /* box-shadow: 0px 0px 8px #000000; */
-    transition: all 0.5s;
-    background-color: rgba(19, 22, 26, 1);
-            font-size: 1.1rem;
-
-    /* position: absolute;
-    opacity: 0.4; */
-}
-
-.nav-link{
-    color: #d4cb95 !important;
-    font-weight: bolder;
-    /* #aa2020  #FFD700*/
-}
-
-.nav-link.active , .nav-link:hover{
-    color: #d62313 !important;
-    /* #aa2020 */
-}
-
-/* navbar-scrolled */
-.navbar-scrolled{
-    background-color: black;
-    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
-}
-
-.main-menu{ 
-    background-size: cover; 
+.main-menu {
+    background-size: cover;
     display: block;
     /* position: relative; */
     /* height: auto; */
 }
-.shadow-header{
+
+.shadow-header {
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.22);
-  }
+}
 
 .main-menu::before {
     content: '';
@@ -85,23 +37,21 @@ body .panel{
     }
 }
 
-.hometext{
-    
-}
+.hometext {}
 
 /*
 ==========================================
    top-banner Design
 ==========================================
 */
-.top-banner{
+.top-banner {
     /* width:100%;
     background: url('../images/bg/bghome.jpg') no-repeat center;
     background-size:cover;
     padding:16.875rem 0 9.375rem; */
-  }
+}
 
-.bg {   
+.bg {
     /* background: url('../images/mainbg.jpg') center center no-repeat;    */
     height: 100vh;
     /* width: auto; */
@@ -111,43 +61,43 @@ body .panel{
 
     filter: blur(2px);
     filter: brightness(100%);
-    background-position: center center; 
+    background-position: center center;
     transform: translate3d(0px, 0px, 0px);
     /* /* width: auto; */
     /* height: auto;  */
 }
 
-.bg-location{
+.bg-location {
     /* background: url('../images/drink00.jpg') center center no-repeat;    */
     /* background-color: black; */
     height: 100vh;
     width: auto;
-    background-size:contain;
-    background-position:center;
+    background-size: contain;
+    background-position: center;
     background-attachment: fixed;
 }
 
-.bg-entertainment{
+.bg-entertainment {
     background-color: black;
     display: block;
 }
 
-.bg-foodservice{
-    background: url('../images/bg/bgservice.jpg') center center ;
-    width:100%;
-    background-size:cover;
-    padding:16.875rem 0 9.375rem;
+.bg-foodservice {
+    background: url('../images/bg/bgservice.jpg') center center;
+    width: 100%;
+    background-size: cover;
+    padding: 16.875rem 0 9.375rem;
     height: 100vh;
 }
 
-.bg-service{
-    background: url('../images/bg/bgservice.jpg') center center no-repeat;     
+.bg-service {
+    background: url('../images/bg/bgservice.jpg') center center no-repeat;
     height: 100vh;
 }
 
 /* -------------------------- */
 
-.menu-btn .smenu-btn{
+.menu-btn .smenu-btn {
     text-decoration: none;
 }
 
@@ -156,12 +106,12 @@ body .panel{
     filter: brightness(1);
 }
 
-.homeimg{
+.homeimg {
     width: 60%;
     margin-left: 10%;
 }
 
-.locationimg{
+.locationimg {
     width: 60%;
     margin-left: 10%;
 }
@@ -175,12 +125,12 @@ body .panel{
     background-color: black;
 }
 
-#facebook{
+#facebook {
     width: 15%;
     height: 15%;
 }
 
-#youtube{
+#youtube {
     width: 15%;
     height: 15%;
 }
@@ -216,45 +166,46 @@ body .panel{
 }
 
 h1 {
-    font-family:  Verdana, Arial, Helvetica, sans-serif;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
     font-weight: bold;
-    color: #d6d313; /* Text color */
+    color: #d6d313;
+    /* Text color */
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
     /* -webkit-text-stroke: 1px #000;  */
     /* text-stroke: 1px #000;  */
     /* font-size: 2em;  */
 }
 
-h2{
-    font-family: 'Arial', sans-serif ; 
+h2 {
+    font-family: 'Arial', sans-serif;
     font-weight: bold;
 }
 
-h3{
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ; 
+h3 {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-weight: bold;
 }
 
-p{
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; 
+p {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     color: #000000ab;
     /* #A56214; */
     font-size: large;
 }
 
 
-#location1{
+#location1 {
     height: auto;
 }
 
-#location2{
+#location2 {
     /* background-color: #EDEDED; 
     background-size: cover; 
     position: relative; */
     height: auto;
 }
 
-.contact-address{
+.contact-address {
     font-family: Lato, sans-serif;
 }
 
@@ -262,20 +213,20 @@ p{
     padding-bottom: 30%;
     padding-top: 20%;
     position: relative;
-  }
-  
-  .google-map iframe {
+}
+
+.google-map iframe {
     height: 80%;
     width: 90%;
     left: 0;
     top: 0;
     position: absolute;
-  }
+}
 
-  .slide{
+.slide {
     width: 100%;
     height: 50%;
-  }
+}
 
 
 #footer .logo {
@@ -283,23 +234,23 @@ p{
     width: 100%;
 }
 
-#service{
+#service {
     /* background-image: url(&quot;https://www.cultursmag.com/wp-content/uploads/2023/07/silhouettes-of-hand-in-concert-light-from-the-stage-1-2-1920x794.jpg&quot;); */
     height: 100%;
     width: 100%;
 }
 
-.figure-caption{
-    text-align: center;   
+.figure-caption {
+    text-align: center;
 }
 
-.food-card{
+.food-card {
     height: 100px;
 }
 
 .cstm-height-card .card-img-top {
-height: 140px;
-object-fit: contain;
+    height: 140px;
+    object-fit: contain;
 }
 
 /*
@@ -307,55 +258,80 @@ object-fit: contain;
    Header Design
 ==========================================
 */
- .navigation-wrap{
-    position:fixed;
-    width:100%;
-    left:0;
-    z-index:1000;
-    -webkit-transition:all 0.3s ease-out;
-    transition:all 0.3s ease-out;
-  } 
-  .navigation-wrap .nav-item{
-    padding:0 0.625rem;
-    transition:all 200ms linear;
-  }
-  .navbar-toggler:focus{
-    outline:unset;
-    border:unset;
+.navigation-wrap {
+    position: fixed;
+    width: 100%;
+    left: 0;
+    z-index: 1000;
+    -webkit-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+}
+
+.navigation-wrap .nav-item {
+    padding: 0 0.625rem;
+    transition: all 200ms linear;
+}
+
+.navbar-toggler:focus {
+    outline: unset;
+    border: unset;
     box-shadow: none;
-  }
-  .nav-link{
-    font-size:0.9375rem;
+}
+
+.nav-link {
+    font-size: 0.9375rem;
     font-weight: 600;
     text-transform: capitalize;
-    color:#d6d313;     /* #d6d313 */
-    letter-spacing: 1px;
-  } 
-  .navigation-wrap .main-btn{
-    padding:0.3125rem 1.4375rem;
-    box-shadow: none;
-    margin-left:0.625rem;
-  } 
-
-  /* .nav-link{
-    padding-left: 45px !important;
-  } */
-
-/* nav ul li a.active,
-nav ul li a:hover{
-  border-color:orange;
-  color:orange;
-} */
-  /* .nav-link:hover{
     color: #d6d313;
-  }  */
+    /* #d6d313 */
+    letter-spacing: 1px;
+}
 
-#navbar-icon{
+.navigation-wrap .main-btn {
+    padding: 0.3125rem 1.4375rem;
+    box-shadow: none;
+    margin-left: 0.625rem;
+}
+
+.logoText {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    width: 45px;
+}
+
+
+.logoText {
+    color: white;
+    text-decoration: none;
+}
+
+.navbar {
+    transition: all 0.5s;
+    background-color: rgba(19, 22, 26, 1);
+    font-size: 1.1rem;
+}
+
+.nav-link, .nav-item .dropdown-item {
+    color: #d4cb95 !important;
+    /* font-weight: bolder; */
+}
+
+.nav-link.active,
+.nav-link:hover {
+    color: #d62313 !important;
+}
+
+/* navbar-scrolled */
+.navbar-scrolled {
+    background-color: black;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
+}
+
+#navbar-icon {
     box-shadow: 0 0 0 1;
     border: none !important;
 }
 
-.navbar-toggler:focus{
+.navbar-toggler:focus {
     box-shadow: 0 0 0 0.1rem !important;
 }
 
@@ -367,51 +343,48 @@ nav ul li a:hover{
     transform: translateY(-8px);
 }
 
-p{
+p {
     line-height: 2rem !important;
 }
 
-
-
 .photo-gallery {
-    color:#313437;
-    background-color:#fff;
-  }
-  
-  .photo-gallery p {
-    color:#7d8285;
-  }
-  
-  .photo-gallery h2 {
-    font-weight:bold;
-    margin-bottom:40px;
-    padding-top:40px;
-    color:inherit;
-  }
-  
-  @media (max-width:767px) {
+    color: #313437;
+    background-color: #fff;
+}
+
+.photo-gallery p {
+    color: #7d8285;
+}
+
+.photo-gallery h2 {
+    font-weight: bold;
+    margin-bottom: 40px;
+    padding-top: 40px;
+    color: inherit;
+}
+
+@media (max-width:767px) {
     .photo-gallery h2 {
-      margin-bottom:25px;
-      padding-top:25px;
-      font-size:24px;
+        margin-bottom: 25px;
+        padding-top: 25px;
+        font-size: 24px;
     }
-  }
-  
-  .photo-gallery .intro {
-    font-size:16px;
-    max-width:500px;
-    margin:0 auto 40px;
-  }
-  
-  .photo-gallery .intro p {
-    margin-bottom:0;
-  }
-  
-  .photo-gallery .photos {
-    padding-bottom:20px;
-  }
-  
-  .photo-gallery .item {
-    padding-bottom:30px;
-  }
-  
+}
+
+.photo-gallery .intro {
+    font-size: 16px;
+    max-width: 500px;
+    margin: 0 auto 40px;
+}
+
+.photo-gallery .intro p {
+    margin-bottom: 0;
+}
+
+.photo-gallery .photos {
+    padding-bottom: 20px;
+}
+
+.photo-gallery .item {
+    padding-bottom: 30px;
+}
