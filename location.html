@@ -16,13 +16,14 @@
   <link rel="stylesheet"
     href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/fontawesome.min.css">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/0.8.2/css/flag-icon.min.css" rel="stylesheet" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
   <link rel="stylesheet" href="CSS/style.css">
 
   <title>Shwer Yoe Yar | Location</title>
   <style>
-
     h2.section-title {
       text-align: center;
       font-weight: 600;
@@ -51,6 +52,10 @@
       font-size: 3.5em;
       padding: 10px 0;
     }
+
+    .google-map {
+      height: 100%;
+    }
   </style>
 </head>
 
@@ -67,53 +72,47 @@
     </div>
 
     <section id="location1" class="d-block p-0 m-0">
-      <div class="container-fluid p-0 m-2"></div>        
-          <div class="row visitUs ms-2">            
-            <div class="col-sm-5 offset-sm-2 col-md-6 mt-4 offset-md-0">
-              <div class="google-map">
-                <iframe
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 mt-4">
+            <div class="google-map">
+              <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d954.2882780070983!2d96.16060470683473!3d16.917737915356234!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30c19157528e576b%3A0xb822351a361943ee!2z4YCb4YC94YC-4YCx4YCb4YCt4YCv4YC44YCb4YCs!5e0!3m2!1sen!2smm!4v1724694499245!5m2!1sen!2smm"
-                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade">
-                </iframe>
-              </div>              
-            </div>
-            <div class="col-sm-6 col-md-6 mt-4 m-auto">
-            <h3 class="text-danger">Shwe Yoe Yar (1)</h3><br>
-            <p>No.783, Wai Bar Gi Road, North Okkalapa Township, Yangon.</p>
-            <p>Address - အမှတ်(၇၈၃) ဝေဘာဂီလမ်းမကြီး၊ (၆)ကွေ့မှတ်တိုင်အနီး၊ <br>မြောက်ဥက္ကလာပမြို့နယ်</p>
-            <p>Phone - 09 795 999 866</p>
-            <p>Email - shweyoeyarrestaurant@gmail.com</p>
-            </div>
-        </div>
-      </div>       
-    </section><hr>
-    <!-- <br> -->
-
-    <section id="location2" class="d-block p-0 m-0 mt-4">
-      <div class="container-fluid p-0 m-2">
-          <div class="row visitUs ms-2">
-            <div class="col-md-6 mt-4">
-              <h3 class="text-danger">Shwe Yoe Yar (2)</h3>
-              <div class="contact-address">
-                <p>No.4, Thudhamma Road, North Okkalapa Township, Yangon.</p>
-                <p>Address - အမှတ်(၄) သုဓမ္မာလမ်းမကြီး၊ (၅)လမ်းမှတ်တိုင်အနီး၊ <br>မြောက်ဥက္ကလာပမြို့နယ်</p>
-                <p>Phone - 09 777 775 549</p>
-                <p>Email - myanmarroyalmyint@gmail.com</p>
-              </div>
-            </div>
-            <div class="col-sm-5 offset-sm-2 col-md-6 mt-4 offset-md-0">
-              <div class="google-map">
-                <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d238.62828224607094!2d96.15660513940817!3d16.873296504425834!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30c19386b58e6c97%3A0x2a0c1b4e1367a553!2s%E2%80%8BShwe%20Yoe%20Yar%20(2)!5e0!3m2!1sen!2smm!4v1724694362996!5m2!1sen!2smm"
-                  width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-                  referrerpolicy="no-referrer-when-downgrade"></iframe>
-              </div>
+                style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+              </iframe>
             </div>
           </div>
+          <div class="col-md-6 mt-4">
+            <h3 class="text-danger">Shwe Yoe Yar (1)</h3>
+            <p>No.783, Wai Bar Gi Road, North Okkalapa Township, Yangon.</p>
+            <p>Address - အမှတ်(၇၈၃) ဝေဘာဂီလမ်းမကြီး၊ (၆)ကွေ့မှတ်တိုင်အနီး၊ <br>မြောက်ဥက္ကလာပမြို့နယ်</p>
+            <p>Phone - <a href="tel:09795999866" class="text-decoration-none">09 795 999 866</a></p>
+            <p>Email - shweyoeyarrestaurant@gmail.com</p>
+          </div>
+        </div>
+        <hr>
+        <div class="row">
+          <div class="col-md-6">
+            <h3 class="text-danger">Shwe Yoe Yar (2)</h3>
+            <div class="contact-address">
+              <p>No.4, Thudhamma Road, North Okkalapa Township, Yangon.</p>
+              <p>Address - အမှတ်(၄) သုဓမ္မာလမ်းမကြီး၊ (၅)လမ်းမှတ်တိုင်အနီး၊ <br>မြောက်ဥက္ကလာပမြို့နယ်</p>
+              <p>Phone - <a href="tel:09777775549" class="text-decoration-none">09 777 775 549</a></p>
+              <p>Email - myanmarroyalmyint@gmail.com</p>
+            </div>
+          </div>
+          <div class="col-md-6 mt-4">
+            <div class="google-map">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d238.62828224607094!2d96.15660513940817!3d16.873296504425834!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30c19386b58e6c97%3A0x2a0c1b4e1367a553!2s%E2%80%8BShwe%20Yoe%20Yar%20(2)!5e0!3m2!1sen!2smm!4v1724694362996!5m2!1sen!2smm"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
-
+    <!-- <br> -->
   </header>
 
   <section id="footer">

@@ -216,8 +216,8 @@ p {
 }
 
 .google-map iframe {
-    height: 80%;
-    width: 90%;
+    height: 100%;
+    width: 100%;
     left: 0;
     top: 0;
     position: absolute;
@@ -348,7 +348,6 @@ p {
 }
 
 p {
-    line-height: 2rem !important;
     text-align: justify;
 }
 
