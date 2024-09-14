@@ -37,7 +37,7 @@ body .panel{
 }
 
 .nav-link{
-    color: #FFD700 !important;
+    color: #d4cb95 !important;
     font-weight: bolder;
     /* #aa2020  #FFD700*/
 }
@@ -176,8 +176,13 @@ body .panel{
 }
 
 #facebook{
-    width: 10%;
-    height: 10%;
+    width: 20%;
+    height: 20%;
+}
+
+#youtube{
+    width: 17%;
+    height: 17%;
 }
 
 #hero-text {
