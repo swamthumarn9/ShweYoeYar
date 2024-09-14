@@ -7,17 +7,23 @@
   <meta charset="UTF-8">
   <meta name="index" content="width=device-width, initial-scale=1.0">
 
+  <link rel="stylesheet" href="CSS/bootstrap.min.css">
+  <link rel="stylesheet" href="CSS/flag-icon.min.css">
+  <link rel="stylesheet" href="CSS/fontawesome.min.css">
+  <link rel="stylesheet" href="CSS/lightbox.min.css">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/0.8.2/css/flag-icon.min.css" rel="stylesheet" />
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
   <link rel="stylesheet"
     href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/fontawesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.8.2/css/lightbox.min.css">
+
 
   <title>Shwer Yoe Yar | Home</title>
   <style>
     h1{
       font-family: 'Montserrat', sans-serif; 
-      color: #fff ; font-size: 4rem;
+      color: #fef6c1 ; font-size: 4rem;
       letter-spacing: 0.1rem; 
       margin-bottom: 1rem;
       animation: fadeInUp 1.5s ease;
@@ -25,7 +31,7 @@
     }
 
     .top-banner{
-      background: url('../images/bg/bg.jpg') no-repeat center;
+      background: url('../images/bg/bghomeblur.jpg') no-repeat center;
       background-size: cover; /* Ensures the background covers the entire page */
     background-position: center; /* Centers the background image */
     background-repeat: no-repeat; /* Prevents the background from repeating */
@@ -42,7 +48,7 @@
 
     .tagline {
             font-size: 1.5rem;
-            color: #fffb17;
+            color: #ffffff;
             margin-bottom: 2rem;
             animation: fadeInUp 2s ease;
         }
@@ -210,24 +216,51 @@
         </div>
       </div>
     </section>
-  
-    <section id="menu mt-2">
+
+    <section id="menu mt-2"></section>
       <div class="container">
         <div class="row gx-3">
-          <div class="col-sm p-1">
+          <div class="col-12 col-sm-6 col-md-3 p-1">
             <img src="./images/slide33.jpg" class="img-fluid colimg" alt="Responsive image" role="img">
             <!-- <p class="figure-caption mt-2">Food</p> -->
           </div>
-          <div class="col-sm p-1">
+          <div class="col-12 col-sm-6 col-md-3 p-1">
             <img src="./images/entertainment/e2.jpg" class="img-fluid colimg" alt="Responsive image" role="img">
             <!-- <p class="figure-caption mt-2">Cook</p> -->
           </div>
-          <div class="col-sm p-1">
+          <div class="col-12 col-sm-6 col-md-3 p-1">
             <img src="./images/group1.jpg" class="img-fluid colimg" alt="Responsive image" role="img">
             <!-- <p class="figure-caption mt-2">Kitchen</p> -->
           </div>
-          <div class="col-sm p-1">
+          <div class="col-12 col-sm-6 col-md-3 p-1">
             <img src="./images/drink1.jpg" class="img-fluid colimg" alt="Responsive image" role="img">
+            <!-- <p class="figure-caption mt-2">Bar</p> -->
+          </div>
+        </div>
+      </div>
+    </section>
+  
+    <section id="menu1 mt-2">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-sm-6 col-md-3">
+            <a href="images/slide33.jpg" data-lightbox="photos">
+            <img src="./images/slide33.jpg" class="img-fluid colimg" alt="Responsive image" role="img"></a>
+            <!-- <p class="figure-caption mt-2">Food</p> -->
+          </div>
+          <div class="col-12 col-sm-6 col-md-3">
+            <a href="./images/entertainment/e2.jpg" data-lightbox="photos">
+            <img src="./images/entertainment/e2.jpg" class="img-fluid colimg" alt="Responsive image" role="img">
+            </a><!-- <p class="figure-caption mt-2">Cook</p> -->
+          </div>
+          <div class="col-12 col-sm-6 col-md-3">
+            <a href="./images/group1.jpg" data-lightbox="photos">
+            <img src="./images/group1.jpg" class="img-fluid colimg" alt="Responsive image" role="img"></a>
+            <!-- <p class="figure-caption mt-2">Kitchen</p> -->
+          </div>
+          <div class="col-12 col-sm-6 col-md-3">
+            <a href="./images/drink1.jpg" data-lightbox="photos">
+            <img src="./images/drink1.jpg" class="img-fluid colimg" alt="Responsive image" role="img"></a>
             <!-- <p class="figure-caption mt-2">Bar</p> -->
           </div>
         </div>
@@ -240,7 +273,7 @@
   <script src="/js/jquery.min.js"></script>
   <script src="/js/bootstrap.bundle.min.js"></script>
   <script src="/js/script.js"></script>
-
+  <script src="/js/lightbox.min.js"></script>
   <script>
     function myMap() {
       var mapProp = {
