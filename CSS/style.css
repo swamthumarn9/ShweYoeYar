@@ -209,6 +209,11 @@ p {
     font-family: Lato, sans-serif;
 }
 
+.contact-address p a{
+    font-size: 17px;
+    font-weight: 300;
+}
+
 .google-map {
     padding-bottom: 30%;
     padding-top: 20%;
@@ -233,7 +238,7 @@ p {
 }
 
 #footer .logo {
-    max-width: 250px;
+    max-width: 230px;
     width: 100%;
 }
 #footer .footer-icon{
