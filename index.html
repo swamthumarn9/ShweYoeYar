@@ -1,268 +1,354 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Welcome to Shwe Yoe Yar!" />
+    <meta
+      name="keywords"
+      content="shwe yoe yar, Shwe Yoe Yar Restaurant, ရွှေရိုးရာ, ရွေရိုးရာ စားသောက်ဆိုင်, Best Restaurant, Myanmar Restaurant, Restaurant in Yangon"
+    />
+    <title>Shwe Yoe Yar | Home</title>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Welcome to Shwe Yoe Yar!">
-  <meta name="keywords" content="shwe yoe yar, Shwe Yoe Yar Restaurant, ရွှေရိုးရာ, ရွေရိုးရာ စားသောက်ဆိုင်, Best Restaurant, Myanmar Restaurant, Restaurant in Yangon">
-  <title>Shwe Yoe Yar | Home</title>
-
-  <link rel="shortcut icon" href="./images/logo/logo.jpg" type="images/x-icon">
-  <link rel="stylesheet" href="CSS/bootstrap.min.css">
-  <link rel="stylesheet" href="css/all.min.css">
-  <link rel="stylesheet" href="CSS/bootstrap-icons.min.css">
-  <link rel="stylesheet" href="CSS/flag-icon.min.css">
-  <link rel="stylesheet" href="CSS/lightbox.min.css">
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/0.8.2/css/flag-icon.min.css" rel="stylesheet" />
-  <link rel="stylesheet" href="CSS/style.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
-    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <style>
-    h1 {
-      font-family: 'Montserrat', sans-serif;
-      color: #dabf15;
-      /* fef6c1 */
-      font-size: 3rem;
-      letter-spacing: 0.1rem;
-      margin-bottom: 1rem;
-      animation: fadeInUp 1.5s ease;
-      font-weight: 700;
-      line-height: 1.5;
-    }
-
-    .top-banner {
-      background: url('../images/bg/bghomeblur.jpg') no-repeat center;
-      background-size: cover;
-      /* Ensures the background covers the entire page */
-      background-position: center;
-      /* Centers the background image */
-      background-repeat: no-repeat;
-      /* Prevents the background from repeating */
-      height: 100vh;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
-      animation: fadeIn 2s ease-in-out;
-      animation: fadeInUp 2s ease;
-    }
-
-    .tagline {
-      font-size: 1.5rem;
-      color: #ffffff;
-      margin-bottom: 2rem;
-      font-weight: bolder;
-      animation: fadeInUp 2s ease;
-    }
-
-    .locationbtn,
-    .menubtn {
-      background-color: #e50914;
-      /*#e50914 */
-      padding: 15px 40px;
-      color: #fff;
-      font-size: 1.2rem;
-      border: none;
-      cursor: pointer;
-      border-radius: 30px;
-      text-transform: uppercase;
-      transition: background-color 0.3s ease;
-      animation: bounce 2s infinite;
-    }
-
-    .locationbtn :hover {
-      background-color: #fff132;
-      color: black;
-    }
-
-    #youtube-video {
-      width: 100%;
-      height: 100%;
-    }
-
-    @keyframes bounce {
-
-      0%,
-      20%,
-      50%,
-      80%,
-      100% {
-        transform: translateY(0);
+    <link
+      rel="shortcut icon"
+      href="./images/logo/logo.jpg"
+      type="images/x-icon"
+    />
+    <link rel="stylesheet" href="CSS/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="CSS/bootstrap-icons.min.css" />
+    <link rel="stylesheet" href="CSS/flag-icon.min.css" />
+    <link rel="stylesheet" href="CSS/lightbox.min.css" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/0.8.2/css/flag-icon.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="CSS/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <style>
+      h1 {
+        font-family: "Montserrat", sans-serif;
+        color: #dabf15;
+        /* fef6c1 */
+        font-size: 3rem;
+        letter-spacing: 0.1rem;
+        margin-bottom: 1rem;
+        animation: fadeInUp 1.5s ease;
+        font-weight: 700;
+        line-height: 1.5;
       }
 
-      40% {
-        transform: translateY(-10px);
+      .top-banner {
+        background: url("../images/bg/bghomeblur.jpg") no-repeat center;
+        background-size: cover;
+        /* Ensures the background covers the entire page */
+        background-position: center;
+        /* Centers the background image */
+        background-repeat: no-repeat;
+        /* Prevents the background from repeating */
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        animation: fadeIn 2s ease-in-out;
+        animation: fadeInUp 2s ease;
       }
 
-      60% {
-        transform: translateY(-5px);
-      }
-    }
-
-    @keyframes fadeIn {
-      0% {
-        opacity: 0;
+      .tagline {
+        font-size: 1.5rem;
+        color: #ffffff;
+        margin-bottom: 2rem;
+        font-weight: bolder;
+        animation: fadeInUp 2s ease;
       }
 
-      100% {
-        opacity: 1;
+      .locationbtn,
+      .menubtn {
+        background-color: #e50914;
+        /*#e50914 */
+        padding: 15px 40px;
+        color: #fff;
+        font-size: 1.2rem;
+        border: none;
+        cursor: pointer;
+        border-radius: 30px;
+        text-transform: uppercase;
+        transition: background-color 0.3s ease;
+        animation: bounce 2s infinite;
       }
-    }
 
-    @keyframes fadeInUp {
-      0% {
-        opacity: 0;
-        transform: translateY(20px);
+      .locationbtn :hover {
+        background-color: #fff132;
+        color: black;
       }
 
-      100% {
-        opacity: 1;
-        transform: translateY(0);
+      #youtube-video {
+        width: 100%;
+        height: 100%;
       }
-    }
-  </style>
-</head>
 
-<body class="panel">
-  <div class="d-block">
-    <header class="main-head">
-      <section id="navbar-section">
+      @keyframes bounce {
+        0%,
+        20%,
+        50%,
+        80%,
+        100% {
+          transform: translateY(0);
+        }
+
+        40% {
+          transform: translateY(-10px);
+        }
+
+        60% {
+          transform: translateY(-5px);
+        }
+      }
+
+      @keyframes fadeIn {
+        0% {
+          opacity: 0;
+        }
+
+        100% {
+          opacity: 1;
+        }
+      }
+
+      @keyframes fadeInUp {
+        0% {
+          opacity: 0;
+          transform: translateY(20px);
+        }
+
+        100% {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+    </style>
+  </head>
+
+  <body class="panel">
+    <div class="d-block">
+      <header class="main-head">
+        <section id="navbar-section"></section>
+      </header>
+
+      <!-- section-1 top-banner -->
+      <section id="home">
+        <div class="container-fluid px-0 top-banner">
+          <div class="container">
+            <div class="row gx-1 mt-4" style="margin-bottom: 100px">
+              <div class="col-lg-12 col-md-12 mb-4 text-center">
+                <h1 class="mb-2 hometext" data-i18n-key="goodFood">
+                  Shwe Yoe Yar Restaurant
+                </h1>
+                <h4 class="tagline">Food - Drink - Live Music</h4>
+                <div class="mt-4">
+                  <a
+                    class="btn btn-warning locationbtn"
+                    href="location.html"
+                    role="button"
+                    data-i18n-key="contact"
+                    >CONTACT US</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </section>
-    </header>
-
-    <!-- section-1 top-banner -->
-    <section id="home">
-      <div class="container-fluid px-0 top-banner">
-        <div class="container">
-          <div class="row gx-1 mt-4" style="margin-bottom: 100px;">
-            <div class="col-lg-12 col-md-12 mb-4 text-center">
-              <h1 class="mb-2 hometext" data-i18n-key="goodFood">Shwe Yoe Yar Restaurant</h1>
-              <h4 class="tagline">Food - Drink - Live Music</h4>
-              <div class="mt-4">
-                <a class="btn btn-warning locationbtn" href="location.html" role="button"
-                  data-i18n-key="contact">CONTACT US</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-  </div>
-  <br>
-  <div class="container-fluid">
-    <section id="live" class="p-2">
-      <div class="row gx-1">
-        <div class="col-md-5 col-sm-12 mt-4 text-center">
-          <iframe id="youtube-video" src="https://www.youtube.com/embed/o2YSc2ybjn8?si=grBRCcN7BLOsh40G"
-            title="YouTube video player" frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-        </div>
-        <div class="col-md-6 col-lg-6 col-md-12 m-auto mt-4 ">
-          <h2 class="text-danger">Live every moment!</h2><br>
-          <p data-i18n-key="welcome">Welcome to Shwe Yoe Yar Restaurant & Bar!</p>
-          <p class="text-justify"  data-i18n-key="livemoment">Indulge in an authentic culinary journey at Shwe Yoe Yar,
-            where the vibrant flavors of Myanmar come to life. Nestled in a cozy yet modern setting,
-            our restaurant and bar offers a unique blend of traditional Burmese cuisine and contemporary
-            dining experiences. Whether you're here for a casual meal, a celebratory feast, or a relaxing
-            drink, Shwe Yoe Yar promises an unforgettable experience.</p>
-        </div>
-      </div>
-    </section>
-    <br>
-
-    <section id="menuItems" class="d-block p-0 m-0">
-      <div class="row gx-3">
-        <div class="col">
-          <div class="menuItems">
-            <div id="carouselExampleDark" class="carousel carousel slide">
-              <div class="carousel-indicators">
-                <button type="button" class="btn active" data-bs-target="#carouselExampleDark" data-bs-slide-to="0"
-                  aria-current="true" aria-label="Slide 1"></button>
-                <button type="button" class="btn" data-bs-target="#carouselExampleDark" data-bs-slide-to="1"
-                  aria-label="Slide 2"></button>
-                <button type="button" class="btn" data-bs-target="#carouselExampleDark" data-bs-slide-to="2"
-                  aria-label="Slide 3"></button>
-              </div>
-              <div class="carousel-inner">
-                <div class="carousel-item active" data-bs-interval="10000">
-                  <img src="./images/slide1.jpg" class="d-block img-fluid slide" alt="Responsive image" role="img">
-                  <div class="carousel-caption d-none d-md-block">
-                  </div>
-                </div>
-                <div class="carousel-item" data-bs-interval="2000">
-                  <img src="./images/slide2.jpg" class="d-block img-fluid slide" alt="Responsive image">
-                  <div class="carousel-caption d-none d-md-block">
-                  </div>
-                </div>
-                <div class="carousel-item" data-bs-interval="2000">
-                  <img src="./images/slide3.jpg" class="d-block img-fluid slide" alt="Responsive image">
-                  <div class="carousel-caption d-none d-md-block">
-                  </div>
-                </div>
-              </div>
-              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark"
-                data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-              </button>
-              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark"
-                data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="menu mt-2"></section>
-    <div class="container">
-      <div class="row">
-        <div class="col-12 col-sm-6 col-md-3 p-1">
-          <img src="./images/slide33.jpg" class="img-fluid colimg" alt="Responsive image" role="img">
-          <!-- <p class="figure-caption mt-2">Food</p> -->
-        </div>
-        <div class="col-12 col-sm-6 col-md-3 p-1">
-          <img src="./images/entertainment/e2.jpg" class="img-fluid colimg" alt="Responsive image" role="img">
-          <!-- <p class="figure-caption mt-2">Cook</p> -->
-        </div>
-        <div class="col-12 col-sm-6 col-md-3 p-1">
-          <img src="./images/group1.jpg" class="img-fluid colimg" alt="Responsive image" role="img">
-          <!-- <p class="figure-caption mt-2">Kitchen</p> -->
-        </div>
-        <div class="col-12 col-sm-6 col-md-3 p-1">
-          <img src="./images/drink1.jpg" class="img-fluid colimg" alt="Responsive image" role="img">
-          <!-- <p class="figure-caption mt-2">Bar</p> -->
-        </div>
-      </div>
     </div>
-    </section>
+    <br />
+    <div class="container-fluid">
+      <section id="live" class="p-2">
+        <div class="row gx-1">
+          <div class="col-md-5 col-sm-12 mt-4 text-center">
+            <iframe
+              id="youtube-video"
+              src="https://www.youtube.com/embed/o2YSc2ybjn8?si=grBRCcN7BLOsh40G"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen
+            ></iframe>
+          </div>
+          <div class="col-md-6 col-lg-6 col-md-12 m-auto mt-4">
+            <h2 class="text-danger">Live every moment!</h2>
+            <br />
+            <p data-i18n-key="welcome">
+              Welcome to Shwe Yoe Yar Restaurant & Bar!
+            </p>
+            <p class="text-justify" data-i18n-key="livemoment">
+              Indulge in an authentic culinary journey at Shwe Yoe Yar, where
+              the vibrant flavors of Myanmar come to life. Nestled in a cozy yet
+              modern setting, our restaurant and bar offers a unique blend of
+              traditional Burmese cuisine and contemporary dining experiences.
+              Whether you're here for a casual meal, a celebratory feast, or a
+              relaxing drink, Shwe Yoe Yar promises an unforgettable experience.
+            </p>
+          </div>
+        </div>
+      </section>
+      <br />
 
-  </div>
+      <section id="menuItems" class="d-block p-0 m-0">
+        <div class="row gx-3">
+          <div class="col">
+            <div class="menuItems">
+              <div id="carouselExampleDark" class="carousel carousel slide">
+                <div class="carousel-indicators">
+                  <button
+                    type="button"
+                    class="btn active"
+                    data-bs-target="#carouselExampleDark"
+                    data-bs-slide-to="0"
+                    aria-current="true"
+                    aria-label="Slide 1"
+                  ></button>
+                  <button
+                    type="button"
+                    class="btn"
+                    data-bs-target="#carouselExampleDark"
+                    data-bs-slide-to="1"
+                    aria-label="Slide 2"
+                  ></button>
+                  <button
+                    type="button"
+                    class="btn"
+                    data-bs-target="#carouselExampleDark"
+                    data-bs-slide-to="2"
+                    aria-label="Slide 3"
+                  ></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active" data-bs-interval="10000">
+                    <img
+                      src="./images/slide1.jpg"
+                      class="d-block img-fluid slide"
+                      alt="Responsive image"
+                      role="img"
+                    />
+                    <div class="carousel-caption d-none d-md-block"></div>
+                  </div>
+                  <div class="carousel-item" data-bs-interval="2000">
+                    <img
+                      src="./images/slide2.jpg"
+                      class="d-block img-fluid slide"
+                      alt="Responsive image"
+                    />
+                    <div class="carousel-caption d-none d-md-block"></div>
+                  </div>
+                  <div class="carousel-item" data-bs-interval="2000">
+                    <img
+                      src="./images/slide3.jpg"
+                      class="d-block img-fluid slide"
+                      alt="Responsive image"
+                    />
+                    <div class="carousel-caption d-none d-md-block"></div>
+                  </div>
+                </div>
+                <button
+                  class="carousel-control-prev"
+                  type="button"
+                  data-bs-target="#carouselExampleDark"
+                  data-bs-slide="prev"
+                >
+                  <span
+                    class="carousel-control-prev-icon"
+                    aria-hidden="true"
+                  ></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button
+                  class="carousel-control-next"
+                  type="button"
+                  data-bs-target="#carouselExampleDark"
+                  data-bs-slide="next"
+                >
+                  <span
+                    class="carousel-control-next-icon"
+                    aria-hidden="true"
+                  ></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
-  <section id="footer"></section>
+      <section id="menu mt-2" class="d-block p-0 m-0">
+        <div class="row gx-3">
+          <div class="col-12 col-sm-6 col-md-3 p-1">
+            <img
+              src="./images/slide33.jpg"
+              class="img-fluid colimg"
+              alt="Responsive image"
+              role="img"
+            />
+            <!-- <p class="figure-caption mt-2">Food</p> -->
+          </div>
+          <div class="col-12 col-sm-6 col-md-3 p-1">
+            <img
+              src="./images/entertainment/e2.jpg"
+              class="img-fluid colimg"
+              alt="Responsive image"
+              role="img"
+            />
+            <!-- <p class="figure-caption mt-2">Cook</p> -->
+          </div>
+          <div class="col-12 col-sm-6 col-md-3 p-1">
+            <img
+              src="./images/group1.jpg"
+              class="img-fluid colimg"
+              alt="Responsive image"
+              role="img"
+            />
+            <!-- <p class="figure-caption mt-2">Kitchen</p> -->
+          </div>
+          <div class="col-12 col-sm-6 col-md-3 p-1">
+            <img
+              src="./images/drink1.jpg"
+              class="img-fluid colimg"
+              alt="Responsive image"
+              role="img"
+            />
+            <!-- <p class="figure-caption mt-2">Bar</p> -->
+          </div>
+        </div>
+      </section>
+    </div>
 
-  <script src="/js/jquery.min.js"></script>
-  <script src="/js/bootstrap.bundle.min.js"></script>
-  <script src="/js/script.js"></script>
-  <script src="/js/lightbox.min.js"></script>
-  <script>
-    function myMap() {
-      var mapProp = {
-        center: new google.maps.LatLng(51.508742, -0.120850),
-        zoom: 5,
-      };
-      var map = new google.maps.Map(document.getElementById("googleMap"), mapProp);
-    }
-  </script>
-  <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY&callback=myMap"></script>
+    <section id="footer"></section>
 
-</body>
-
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/bootstrap.bundle.min.js"></script>
+    <script src="/js/script.js"></script>
+    <script src="/js/lightbox.min.js"></script>
+    <script>
+      function myMap() {
+        var mapProp = {
+          center: new google.maps.LatLng(51.508742, -0.12085),
+          zoom: 5,
+        };
+        var map = new google.maps.Map(
+          document.getElementById("googleMap"),
+          mapProp
+        );
+      }
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY&callback=myMap"></script>
+  </body>
 </html>
